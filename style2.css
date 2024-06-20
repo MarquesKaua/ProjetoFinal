@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    background-color: #f2faf2;
+    height: 100vh;
+    margin: 0px;
+}
+
+header{
+    background-image: linear-gradient(to left, #3E5922,#497320);
+    height: 70px;
+    display: flex;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    width: 100%;
+    top: 2px;
+}
+
+li{
+    list-style: none;
+    padding: 20px;
+}
+
+header a{
+    background-color: #5B8C2A;
+    padding: 9pt;
+    transition:  0.5s ease-in-out;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header a:hover{
+    background-color: #497320;
+    transform: scale(1.1);
+}
+
+main{
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 90%;
+    text-align: justify;
+}
+
+section{
+    width:45%;
+    float: left;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 150px;
+}
+
+footer p{
+    color: white;
+    font-size: 18px;
+    font-family: arial;
+    text-align: center;
+}
+
+footer a{
+    text-align: center;
+    color:#76b437;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer a:hover{
+    color: #1d3108;
+    text-decoration: none;
+}
+
+aside{
+    width: 45%;
+    padding-bottom: 150px;
+    padding-top: 10px;
+    float: right;
+    margin: auto;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #283040;
+}
+
+h2{
+    color: #20221d;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h3{
+    color: #3E5922;
+    font-size: 24px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e3e5e9;
+    padding: 20px;
+    box-shadow: 1px 1px 10px rgb(173, 173, 173);
+    border-radius: 10px;
+}
+
+section a,aside a{
+    color: #3E5922;
+    font-weight: bold;
+}
+
+section a:hover, aside a:hover{
+    color: #253515;
+    text-decoration: none;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: linear-gradient(to right, #3E5922,#497320);
+}
+
+@media (max-width:800px){
+    nav{
+        justify-content: center;
+        width: 100%;
+        top: 2px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 14px;
+        width: 60%;
+        margin: auto;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    aside,section{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+}

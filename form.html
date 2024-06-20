@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia do Futebol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <nav id="nav">
+            <li class="li"><a href="index.html">Home</a></li>
+            <li class="li"><a href="form.html">Cadastro</a></li>
+        </nav>
+    </header> 
+    <div id="cadastro">
+        <h1>Cadastro de Jogadores</h1>
+        <h2>Adicione 10 jogadores que já marcaram em uma copa do mundo:</h2>
+
+        <form id="jogadoresForm">
+            <label for="nomeCompleto">Nome Completo:</label><br>
+            <input type="text" id="nomeCompleto" name="nomeCompleto"><br>
+
+            <label for="selecao">Seleção:</label><br>
+            <input type="text" id="selecao" name="selecao"><br>
+
+            <label for="gols">Quantos gols em final?:</label><br>
+            <input type="text" id="gols" name="gols"><br>
+
+            <label for="ganhou">Ganhou a copa? (se sim, quantas?):</label><br>
+            <input type="text" id="ganhou" name="ganhou"><br><br>
+
+            <button type="button" onclick="inserirJogador()">Inserir Jogador</button>
+        </form>
+    </div>
+
+    <div id="consulta">
+        <h1>Consultar e Deletar Jogadores</h1>
+        <h2>Lista de jogadores que já marcaram em uma copa do mundo:</h2>
+
+        <form id="consultarJogadores">
+            <label id="selecione" for="deleteSelect">Selecione o jogador:</label><br>
+            <select id="deleteSelect"></select><br><br>
+            <button type="button" onclick="deletarJogador()">Deletar Jogador</button>
+            <button type="button" onclick="mostrarJogador()">Mostrar Jogador</button>
+            <button type="button" onclick="atualizarJogador()">Atualizar Jogador</button>
+
+        </form>
+    </div>
+
+    <p id="demo"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

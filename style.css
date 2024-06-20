@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    backdrop-filter: blur(5px);
+    font-family: Arial, sans-serif;
+    background: url("imagens/background.jpg") no-repeat center center fixed;
+    backdrop-filter: hue-rotate(190deg);
+    background-size: cover;
+    background-color: #f0f0f0; 
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    color: #ffffff; 
+    background-color: rgb(0, 0, 0);
+    font-size: 46px;
+
+}
+
+#cadastro,#consulta{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+#selecione{
+    color: white;
+    
+}
+
+#consulta{
+    padding: 10px;
+}
+
+#consulta h1{
+    font-size: 35px;
+}
+
+h2 {
+    background-color: rgb(0, 128, 0);
+    color: #ffffff; 
+}
+
+
+#jogadoresForm, #consultarJogadores {
+    max-width: 600px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#consultarJogadores button, input[type="button"]{
+    background-color: #006600; 
+    color: #ffffff; 
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+select{
+    box-shadow: 2px 2px 12px rgb(109, 109, 109)
+}
+
+label {
+    font-weight: bold;
+    color: #006600; 
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+#jogadoresForm button, input[type="button"] {
+    background-color: #006600; 
+    color: #ffffff; 
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#jogadoresForm button:hover {
+    background-color: #004d00; 
+    transition: 0.9s;
+}
+
+
+#deleteSelect {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+#demo {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffffff; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-height: 100px;
+}
+
+
+@media (max-width: 800px){
+    #cadastro, #consulta{
+        width: 100%;
+    }
+
+    nav{
+        position: absolute;
+        left: -20%;
+        top: 2px;
+    }
+
+   
+    h1{
+        font-size: 25px;
+
+    }
+
+    #consulta h1{
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    
+}
+
+header{
+    background-image: linear-gradient(to left, #3E5922,#497320);
+    height: 70px;
+    margin: -20px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+}
+
+nav{
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    width: 100%;
+    top: 2px;
+}
+
+li{
+    list-style: none;
+    padding: 20px;
+}
+
+header a{
+    background-color: #5B8C2A;
+    padding: 9pt;
+    transition:  0.5s ease-in-out;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header a:hover{
+    background-color: #497320;
+    transform: scale(1.1);
+}
+
+#cadastro{
+    margin-top: 100px;
+}
